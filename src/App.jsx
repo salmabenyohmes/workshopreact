@@ -7,7 +7,16 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+
+    <div>
+      <h1>Exercices React</h1>
+      <Counter initialCount={0} step={1} />
+      <ListManager initialItems={["React", "Angular", "VueJs"]} placeholder="Ajouter un framework..." />
+      <ColorBox initialColor="#ff5733" colorOptions={["#ff5733", "#33ff57", "#3357ff"]} />
+      <NoteManager initialNotes={[12, 15, 18]} />
+      <TodoList initialTasks={[{ name: "Faire les courses", priority: "Haute", completed: false }]} />
+    </div>
+    /*<>
       <div>
         <ClassComponent name ="salma"/>
         <a href="https://vite.dev" target="_blank">
@@ -30,7 +39,9 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
     </>
+    */
   )
+  
 }
 
 export default App
